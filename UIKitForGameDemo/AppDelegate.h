@@ -2,8 +2,7 @@
 //  AppDelegate.h
 //  UIKitForGameDemo
 //
-//  Created by Shuichi Tsutsumi on 12/07/17.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Shuichi Tsutsumi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

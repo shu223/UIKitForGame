@@ -1,13 +1,20 @@
 //
 //  ViewController.h
-//  UIKitForGameDemo
 //
-//  Created by Shuichi Tsutsumi on 12/07/17.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Shuichi Tsutsumi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "DamageValueLabel.h"
+
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet UISlider *slider;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *segmented;
+@property (nonatomic, retain) IBOutlet UIImageView *charaImgView;
+@property (nonatomic, retain) IBOutlet DamageValueLabel *damageLabel;
+
+- (IBAction)pressDamage;
 
 @end

@@ -1,34 +1,80 @@
 //
 //  ViewController.m
-//  UIKitForGameDemo
 //
-//  Created by Shuichi Tsutsumi on 12/07/17.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Shuichi Tsutsumi. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "UIView+shake.h"
+#import "UIImageView+effects.h"
+#import "UIImage+fill.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
+
+@synthesize slider;
+@synthesize segmented;
+@synthesize charaImgView;
+@synthesize damageLabel;
+
+
+- (void)dealloc
+{
+    [self viewDidUnload];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.segmented setSelectedSegmentIndex:2];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+
+#pragma mark -------------------------------------------------------------------
+#pragma mark IBAction
+
+- (IBAction)pressDamage {
+    
+    CGFloat value = 999.0 * slider.value;
+    
+    self.damageLabel.text = [NSString stringWithFormat:@"%3.0f", value];
+    
+    DamageAnimationType type;
+    switch (self.segmented.selectedSegmentIndex) {
+        case 0:
+        default:
+            type = DamageAnimationType1;
+            self.damageLabel.center = CGPointMake(self.charaImgView.center.x, self.charaImgView.center.y + self.charaImgView.frame.size.height * 0.6);
+            break;
+        case 1:
+            type = DamageAnimationType2;
+            self.damageLabel.center = CGPointMake(self.charaImgView.center.x, self.charaImgView.center.y - self.charaImgView.frame.size.height * 0.6);
+            break;
+        case 2:
+            type = DamageAnimationType3;
+            self.damageLabel.center = CGPointMake(self.charaImgView.center.x, self.charaImgView.center.y + self.charaImgView.frame.size.height * 0.6);
+            break;
+    }
+    
+    [self.charaImgView shakeWithCount:10 interval:0.03];
+    [self.charaImgView whiteFadeInWithDuration:0.3
+                                         delay:0.0
+                                         block:^(void) {
+                                             [self.damageLabel startAnimationWithAnimationType:type];
+                                         }];
 }
 
 @end
