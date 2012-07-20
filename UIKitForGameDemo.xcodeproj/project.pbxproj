@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A763EFC15B94A1300AD52A7 /* UIImage+fill.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */; };
 		8AC0021A15B537A200FE7D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021915B537A200FE7D45 /* UIKit.framework */; };
 		8AC0021C15B537A200FE7D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021B15B537A200FE7D45 /* Foundation.framework */; };
 		8AC0021E15B537A200FE7D45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021D15B537A200FE7D45 /* CoreGraphics.framework */; };
@@ -19,10 +20,11 @@
 		8AC0024A15B538C000FE7D45 /* UIView+shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0024815B538C000FE7D45 /* UIView+shake.m */; };
 		8AC0025315B53B5500FE7D45 /* konchi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC0025215B53B5500FE7D45 /* konchi.png */; };
 		8AC0025F15B53BFF00FE7D45 /* UIImageView+effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0025C15B53BFF00FE7D45 /* UIImageView+effects.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8AE2E47E15B542BF00F0EC1B /* UIImage+fill.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2E47D15B542BF00F0EC1B /* UIImage+fill.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A763EFA15B94A1300AD52A7 /* UIImage+fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fill.h"; sourceTree = "<group>"; };
+		8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fill.m"; sourceTree = "<group>"; };
 		8AC0021515B537A200FE7D45 /* UIKitForGameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitForGameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC0021915B537A200FE7D45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8AC0021B15B537A200FE7D45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,8 +45,6 @@
 		8AC0025215B53B5500FE7D45 /* konchi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = konchi.png; sourceTree = "<group>"; };
 		8AC0025B15B53BFF00FE7D45 /* UIImageView+effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+effects.h"; sourceTree = "<group>"; };
 		8AC0025C15B53BFF00FE7D45 /* UIImageView+effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+effects.m"; sourceTree = "<group>"; };
-		8AE2E47C15B542BF00F0EC1B /* UIImage+fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+fill.h"; path = "UIKitForGame/UIImage+fill.h"; sourceTree = SOURCE_ROOT; };
-		8AE2E47D15B542BF00F0EC1B /* UIImage+fill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+fill.m"; path = "UIKitForGame/UIImage+fill.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,10 +161,10 @@
 		8AC0025515B53BFF00FE7D45 /* UIImageView+effects */ = {
 			isa = PBXGroup;
 			children = (
+				8A763EFA15B94A1300AD52A7 /* UIImage+fill.h */,
+				8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */,
 				8AC0025B15B53BFF00FE7D45 /* UIImageView+effects.h */,
 				8AC0025C15B53BFF00FE7D45 /* UIImageView+effects.m */,
-				8AE2E47C15B542BF00F0EC1B /* UIImage+fill.h */,
-				8AE2E47D15B542BF00F0EC1B /* UIImage+fill.m */,
 			);
 			path = "UIImageView+effects";
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				8AC0024915B538C000FE7D45 /* DamageValueLabel.m in Sources */,
 				8AC0024A15B538C000FE7D45 /* UIView+shake.m in Sources */,
 				8AC0025F15B53BFF00FE7D45 /* UIImageView+effects.m in Sources */,
-				8AE2E47E15B542BF00F0EC1B /* UIImage+fill.m in Sources */,
+				8A763EFC15B94A1300AD52A7 /* UIImage+fill.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
