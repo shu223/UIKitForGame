@@ -11,7 +11,9 @@
 - (void)executeBlock__:(void (^)(void))block
 {
     block();
+#if !__has_feature(objc_arc)
     [block release];
+#endif
 }
 
 - (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay
@@ -40,7 +42,13 @@
     if (!self.image) {
         return;
     }
+    
+#if !__has_feature(objc_arc)
     UIImageView *effectImageView = [[[UIImageView alloc] initWithFrame:self.bounds] autorelease];
+#else
+    UIImageView *effectImageView = [[UIImageView alloc] initWithFrame:self.bounds];
+#endif
+
     effectImageView.backgroundColor = [UIColor clearColor];
     effectImageView.image = [self.image imageFilledWhite];
     effectImageView.contentMode = self.contentMode;
