@@ -50,6 +50,13 @@
     
     CGFloat value = 999.0 * slider.value;
     
+    if (value > 500) {
+        self.damageLabel.textColor = [UIColor redColor];
+    }
+    else {
+        self.damageLabel.textColor = [UIColor whiteColor];
+    }
+    
     self.damageLabel.text = [NSString stringWithFormat:@"%3.0f", value];
     
     DamageAnimationType type;
