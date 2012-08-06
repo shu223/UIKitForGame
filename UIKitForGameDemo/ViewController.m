@@ -35,12 +35,47 @@
     [super viewDidLoad];
     
     [self.segmented setSelectedSegmentIndex:2];
+    
+    
+    // ---- UIImage+fill samples ----
+    UIImage *whiteImage     = [self.charaImgView.image imageFilledWhite];
+    UIImage *purpleImage    = [self.charaImgView.image imageFilledWithColor:[UIColor purpleColor]];
+    UIImage *magentaImage   = [self.charaImgView.image imageFilledWithColor:[UIColor magentaColor]];
+    UIImage *cyanImage      = [self.charaImgView.image imageFilledWithColor:[UIColor cyanColor]];
+    UIImage *greenImage     = [self.charaImgView.image imageFilledWithColor:[UIColor greenColor]];
+    UIImage *brownImage     = [self.charaImgView.image imageFilledWithColor:[UIColor brownColor]];
+    UIImage *orangeImage    = [self.charaImgView.image imageFilledWithColor:[UIColor orangeColor]];
+    [self saveImage:whiteImage filename:@"white"];
+    [self saveImage:purpleImage filename:@"purple"];
+    [self saveImage:magentaImage filename:@"magenta"];
+    [self saveImage:cyanImage filename:@"cyan"];
+    [self saveImage:greenImage filename:@"green"];
+    [self saveImage:brownImage filename:@"brown"];
+    [self saveImage:orangeImage filename:@"orange"];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
 }
+
+
+#pragma mark -------------------------------------------------------------------
+#pragma mark Private
+
+- (void)saveImage:(UIImage *)image filename:(NSString *)filename {
+    
+    NSData *data = UIImagePNGRepresentation(image);
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@.png",
+                          [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"],
+                          filename];
+    if ([data writeToFile:filePath atomically:YES]) {
+        NSLog(@"OK");
+    } else {
+        NSLog(@"Error");
+    }
+}
+
 
 
 #pragma mark -------------------------------------------------------------------
