@@ -42,9 +42,9 @@
         r = g = b = components[0];
     }
 
-    unsigned char R = (unsigned char)r * 255;
-    unsigned char G = (unsigned char)g * 255;
-    unsigned char B = (unsigned char)b * 255;
+    unsigned char R = (unsigned char)(r * 255.);
+    unsigned char G = (unsigned char)(g * 255.);
+    unsigned char B = (unsigned char)(b * 255.);
 
     const size_t bitmapByteCount = bytesPerRow * height;
     for (int i=0; i < bitmapByteCount; i+=4) {
