@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A599FAE15F86B42002FB40C /* CustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A599FAD15F86B42002FB40C /* CustomFontLabel.m */; };
+		8A599FB115F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A599FB015F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf */; };
 		8A763EFC15B94A1300AD52A7 /* UIImage+fill.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */; };
 		8A85B45A15CE4995009AD30F /* m13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A85B45815CE4995009AD30F /* m13.png */; };
 		8A85B45B15CE4995009AD30F /* m24.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A85B45915CE4995009AD30F /* m24.png */; };
+		8ABD914215D394530041D3FC /* DQView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABD914115D394530041D3FC /* DQView.m */; };
 		8AC0021A15B537A200FE7D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021915B537A200FE7D45 /* UIKit.framework */; };
 		8AC0021C15B537A200FE7D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021B15B537A200FE7D45 /* Foundation.framework */; };
 		8AC0021E15B537A200FE7D45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021D15B537A200FE7D45 /* CoreGraphics.framework */; };
@@ -25,10 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A599FAC15F86B42002FB40C /* CustomFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontLabel.h; sourceTree = "<group>"; };
+		8A599FAD15F86B42002FB40C /* CustomFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontLabel.m; sourceTree = "<group>"; };
+		8A599FB015F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GD-DOTFONT-DQ-TTF_008.ttf"; sourceTree = "<group>"; };
 		8A763EFA15B94A1300AD52A7 /* UIImage+fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fill.h"; sourceTree = "<group>"; };
 		8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fill.m"; sourceTree = "<group>"; };
 		8A85B45815CE4995009AD30F /* m13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m13.png; sourceTree = "<group>"; };
 		8A85B45915CE4995009AD30F /* m24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m24.png; sourceTree = "<group>"; };
+		8ABD914015D394530041D3FC /* DQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQView.h; sourceTree = "<group>"; };
+		8ABD914115D394530041D3FC /* DQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQView.m; sourceTree = "<group>"; };
 		8AC0021515B537A200FE7D45 /* UIKitForGameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitForGameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC0021915B537A200FE7D45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8AC0021B15B537A200FE7D45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +73,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A599FAB15F86B42002FB40C /* CustomFontLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8A599FAC15F86B42002FB40C /* CustomFontLabel.h */,
+				8A599FAD15F86B42002FB40C /* CustomFontLabel.m */,
+			);
+			path = CustomFontLabel;
+			sourceTree = "<group>";
+		};
+		8A599FAF15F86B90002FB40C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8A599FB015F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		8ABD913F15D394530041D3FC /* DQView */ = {
+			isa = PBXGroup;
+			children = (
+				8ABD914015D394530041D3FC /* DQView.h */,
+				8ABD914115D394530041D3FC /* DQView.m */,
+			);
+			path = DQView;
+			sourceTree = "<group>";
+		};
 		8AC0020A15B537A200FE7D45 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +155,8 @@
 		8AC0024215B538C000FE7D45 /* UIKitForGame */ = {
 			isa = PBXGroup;
 			children = (
+				8A599FAB15F86B42002FB40C /* CustomFontLabel */,
+				8ABD913F15D394530041D3FC /* DQView */,
 				8AC0025515B53BFF00FE7D45 /* UIImageView+effects */,
 				8AC0024315B538C000FE7D45 /* DamageValueLabel */,
 				8AC0024615B538C000FE7D45 /* UIView+shake */,
@@ -149,6 +185,7 @@
 		8AC0025015B53B5500FE7D45 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A599FAF15F86B90002FB40C /* fonts */,
 				8AC0025115B53B5500FE7D45 /* images */,
 			);
 			path = Resources;
@@ -230,6 +267,7 @@
 				8AC0025315B53B5500FE7D45 /* konchi.png in Resources */,
 				8A85B45A15CE4995009AD30F /* m13.png in Resources */,
 				8A85B45B15CE4995009AD30F /* m24.png in Resources */,
+				8A599FB115F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +285,8 @@
 				8AC0024A15B538C000FE7D45 /* UIView+shake.m in Sources */,
 				8AC0025F15B53BFF00FE7D45 /* UIImageView+effects.m in Sources */,
 				8A763EFC15B94A1300AD52A7 /* UIImage+fill.m in Sources */,
+				8ABD914215D394530041D3FC /* DQView.m in Sources */,
+				8A599FAE15F86B42002FB40C /* CustomFontLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

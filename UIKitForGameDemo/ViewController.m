@@ -8,14 +8,10 @@
 #import "UIView+shake.h"
 #import "UIImageView+effects.h"
 #import "UIImage+fill.h"
+#import <QuartzCore/QuartzCore.h>
 
 
 @implementation ViewController
-
-@synthesize slider;
-@synthesize segmented;
-@synthesize charaImgView;
-@synthesize damageLabel;
 
 
 - (void)dealloc
@@ -34,6 +30,11 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor underPageBackgroundColor];
+
+    self.shadowView.layer.shadowOpacity = 0.3;
+    self.shadowView.layer.shadowOffset = CGSizeMake(0.0, 5.0);
+
     [self.segmented setSelectedSegmentIndex:2];
     
     
@@ -83,7 +84,7 @@
 
 - (IBAction)pressDamage {
     
-    CGFloat value = 999.0 * slider.value;
+    CGFloat value = 999.0 * self.slider.value;
     
     if (value > 500) {
         self.damageLabel.textColor = [UIColor redColor];
