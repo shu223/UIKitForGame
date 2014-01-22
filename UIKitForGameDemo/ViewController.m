@@ -30,10 +30,10 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor underPageBackgroundColor];
+//    self.view.backgroundColor = [UIColor underPageBackgroundColor];
 
-    self.shadowView.layer.shadowOpacity = 0.3;
-    self.shadowView.layer.shadowOffset = CGSizeMake(0.0, 5.0);
+//    self.shadowView.layer.shadowOpacity = 0.3;
+//    self.shadowView.layer.shadowOffset = CGSizeMake(0.0, 5.0);
 
     [self.segmented setSelectedSegmentIndex:2];
     
