@@ -32,7 +32,7 @@
 	}
 
     const CGFloat *components = CGColorGetComponents(color.CGColor);
-    const int numComponents = CGColorGetNumberOfComponents(color.CGColor);
+    const size_t numComponents = CGColorGetNumberOfComponents(color.CGColor);
     CGFloat r, g, b;
     if (numComponents == 4) {
         r = components[0];

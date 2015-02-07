@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GD-DOTFONT-DQ-TTF_008.ttf">
+            <string>GD-DOTFONT-DQ-TTF</string>
+            <string>GD-DOTFONT-DQ-TTF</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
@@ -19,79 +25,115 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="m24.png" id="18">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="m24.png" translatesAutoresizingMaskIntoConstraints="NO" id="18">
                     <rect key="frame" x="106" y="110" width="108" height="116"/>
-                    <autoresizingMask key="autoresizingMask"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="999" lineBreakMode="tailTruncation" minimumFontSize="10" id="8" customClass="DamageValueLabel">
-                    <rect key="frame" x="142" y="236" width="36" height="25"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="999" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8" customClass="DamageValueLabel">
+                    <rect key="frame" x="137" y="236" width="45" height="30"/>
+                    <fontDescription key="fontDescription" name="GD-DOTFONT-DQ-TTF" family="GD-DOTFONT-DQ-TTF" pointSize="29"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UIKitForGame" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="29" customClass="CustomFontLabel">
-                    <rect key="frame" x="40" y="30" width="180" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="UIKitForGame" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="29" customClass="CustomFontLabel">
+                    <rect key="frame" x="97" y="30" width="125.5" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" id="IBF-zs-xyi" customClass="DQView">
-                    <rect key="frame" x="5" y="292" width="310" height="180"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBF-zs-xyi" customClass="DQView">
+                    <rect key="frame" x="8" y="292" width="304" height="196"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20" customClass="CustomFontLabel">
+                            <rect key="frame" x="22" y="30" width="100" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="5aw-U5-swn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                            <rect key="frame" x="120" y="30" width="164" height="31"/>
+                        </slider>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21" customClass="CustomFontLabel">
+                            <rect key="frame" x="22" y="86" width="100" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="diS-Jp-SN0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                            <rect key="frame" x="122" y="80" width="160" height="29"/>
+                            <segments>
+                                <segment title="1"/>
+                                <segment title="2"/>
+                                <segment title="3"/>
+                            </segments>
+                        </segmentedControl>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Default" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22" customClass="CustomFontLabel">
+                            <rect key="frame" x="230" y="110" width="51.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                            <rect key="frame" x="92" y="128" width="120" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="3pe-s4-P5E"/>
+                                <constraint firstAttribute="height" constant="60" id="jdw-gL-Nkl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GD-DOTFONT-DQ-TTF" family="GD-DOTFONT-DQ-TTF" pointSize="26"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                            <state key="normal" title="Attack!">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressDamage" destination="-1" eventType="touchUpInside" id="14"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="10" firstAttribute="leading" secondItem="20" secondAttribute="trailing" id="0II-G9-zIr"/>
+                        <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" constant="8" id="Doe-jT-Gnt"/>
+                        <constraint firstItem="22" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="2" id="GYI-Tx-ATk"/>
+                        <constraint firstItem="16" firstAttribute="width" secondItem="10" secondAttribute="width" id="Gg8-tV-VTQ"/>
+                        <constraint firstItem="9" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="20" id="ReF-Vh-cFS"/>
+                        <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="22" id="Rlh-bv-y26"/>
+                        <constraint firstItem="16" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="20" id="SPQ-Q9-ITi"/>
+                        <constraint firstItem="16" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" id="Udf-AE-Ahd"/>
+                        <constraint firstAttribute="centerX" secondItem="9" secondAttribute="centerX" id="Vzq-GG-2vy"/>
+                        <constraint firstItem="21" firstAttribute="leading" secondItem="IBF-zs-xyi" secondAttribute="leading" constant="22" id="WTE-eK-QDA"/>
+                        <constraint firstItem="10" firstAttribute="top" secondItem="IBF-zs-xyi" secondAttribute="top" constant="30" id="Wl5-5R-9f8"/>
+                        <constraint firstItem="20" firstAttribute="leading" secondItem="IBF-zs-xyi" secondAttribute="leading" constant="22" id="XnM-bD-1kq"/>
+                        <constraint firstItem="16" firstAttribute="trailing" secondItem="10" secondAttribute="trailing" id="a7L-3v-4iU"/>
+                        <constraint firstItem="21" firstAttribute="centerY" secondItem="16" secondAttribute="centerY" constant="4" id="inL-we-Kfu"/>
+                        <constraint firstItem="20" firstAttribute="centerY" secondItem="10" secondAttribute="centerY" constant="-3" id="lNE-Jv-ETQ"/>
+                    </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9">
-                    <rect key="frame" x="100" y="416" width="120" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" title="Attack!">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="pressDamage" destination="-1" eventType="touchUpInside" id="14"/>
-                    </connections>
-                </button>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="10">
-                    <rect key="frame" x="120" y="317" width="180" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </slider>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="16">
-                    <rect key="frame" x="120" y="367" width="180" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <segments>
-                        <segment title="1"/>
-                        <segment title="2"/>
-                        <segment title="3"/>
-                    </segments>
-                </segmentedControl>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="20" customClass="CustomFontLabel">
-                    <rect key="frame" x="30" y="315" width="100" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21" customClass="CustomFontLabel">
-                    <rect key="frame" x="30" y="363" width="100" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Default" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="22" customClass="CustomFontLabel">
-                    <rect key="frame" x="240" y="397" width="60" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                </label>
             </subviews>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <constraints>
+                <constraint firstItem="IBF-zs-xyi" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="66" id="2RS-QC-q6H"/>
+                <constraint firstAttribute="centerX" secondItem="29" secondAttribute="centerX" id="AZQ-64-4t5"/>
+                <constraint firstAttribute="centerY" secondItem="18" secondAttribute="centerY" constant="116" id="Agb-PN-iQL"/>
+                <constraint firstAttribute="centerX" secondItem="8" secondAttribute="centerX" id="DZr-zz-tew"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="10" id="H52-sw-ak3"/>
+                <constraint firstItem="29" firstAttribute="top" secondItem="6" secondAttribute="top" constant="30" id="McK-Bv-EkL"/>
+                <constraint firstItem="IBF-zs-xyi" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="8" id="dH6-xm-1nd"/>
+                <constraint firstAttribute="centerX" secondItem="18" secondAttribute="centerX" id="kIy-97-8aa"/>
+                <constraint firstAttribute="trailing" secondItem="IBF-zs-xyi" secondAttribute="trailing" constant="8" id="s0k-ag-UVT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
     <resources>
         <image name="m24.png" width="108" height="116"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
