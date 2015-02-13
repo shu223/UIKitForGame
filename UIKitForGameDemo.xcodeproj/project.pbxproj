@@ -13,7 +13,6 @@
 		8A599FAE15F86B42002FB40C /* CustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A599FAD15F86B42002FB40C /* CustomFontLabel.m */; };
 		8A599FB115F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A599FB015F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf */; };
 		8A763EFC15B94A1300AD52A7 /* UIImage+fill.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */; };
-		8A85B45A15CE4995009AD30F /* m13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A85B45815CE4995009AD30F /* m13.png */; };
 		8ABD914215D394530041D3FC /* DQView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABD914115D394530041D3FC /* DQView.m */; };
 		8AC0021A15B537A200FE7D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021915B537A200FE7D45 /* UIKit.framework */; };
 		8AC0021C15B537A200FE7D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0021B15B537A200FE7D45 /* Foundation.framework */; };
@@ -25,7 +24,6 @@
 		8AC0023015B537A200FE7D45 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC0022E15B537A200FE7D45 /* ViewController.xib */; };
 		8AC0024915B538C000FE7D45 /* DamageValueLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0024515B538C000FE7D45 /* DamageValueLabel.m */; };
 		8AC0024A15B538C000FE7D45 /* UIView+shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0024815B538C000FE7D45 /* UIView+shake.m */; };
-		8AC0025315B53B5500FE7D45 /* konchi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC0025215B53B5500FE7D45 /* konchi.png */; };
 		8AC0025F15B53BFF00FE7D45 /* UIImageView+effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC0025C15B53BFF00FE7D45 /* UIImageView+effects.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -38,7 +36,6 @@
 		8A599FB015F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GD-DOTFONT-DQ-TTF_008.ttf"; sourceTree = "<group>"; };
 		8A763EFA15B94A1300AD52A7 /* UIImage+fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fill.h"; sourceTree = "<group>"; };
 		8A763EFB15B94A1300AD52A7 /* UIImage+fill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fill.m"; sourceTree = "<group>"; };
-		8A85B45815CE4995009AD30F /* m13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m13.png; sourceTree = "<group>"; };
 		8ABD914015D394530041D3FC /* DQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQView.h; sourceTree = "<group>"; };
 		8ABD914115D394530041D3FC /* DQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQView.m; sourceTree = "<group>"; };
 		8AC0021515B537A200FE7D45 /* UIKitForGameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitForGameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +55,6 @@
 		8AC0024515B538C000FE7D45 /* DamageValueLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DamageValueLabel.m; sourceTree = "<group>"; };
 		8AC0024715B538C000FE7D45 /* UIView+shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+shake.h"; sourceTree = "<group>"; };
 		8AC0024815B538C000FE7D45 /* UIView+shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+shake.m"; sourceTree = "<group>"; };
-		8AC0025215B53B5500FE7D45 /* konchi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = konchi.png; sourceTree = "<group>"; };
 		8AC0025B15B53BFF00FE7D45 /* UIImageView+effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+effects.h"; sourceTree = "<group>"; };
 		8AC0025C15B53BFF00FE7D45 /* UIImageView+effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+effects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,8 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				8A0AA6A1188F9B70006DB3A8 /* m24@2x.png */,
-				8A85B45815CE4995009AD30F /* m13.png */,
-				8AC0025215B53B5500FE7D45 /* konchi.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -271,8 +265,6 @@
 				8AC0022415B537A200FE7D45 /* InfoPlist.strings in Resources */,
 				8AC0023015B537A200FE7D45 /* ViewController.xib in Resources */,
 				8A0AA6A2188F9B70006DB3A8 /* m24@2x.png in Resources */,
-				8AC0025315B53B5500FE7D45 /* konchi.png in Resources */,
-				8A85B45A15CE4995009AD30F /* m13.png in Resources */,
 				8A558B921A85E1FF007B03F7 /* Launch Screen.xib in Resources */,
 				8A0AA6A0188F8EF2006DB3A8 /* Default-568h@2x.png in Resources */,
 				8A599FB115F86B90002FB40C /* GD-DOTFONT-DQ-TTF_008.ttf in Resources */,
